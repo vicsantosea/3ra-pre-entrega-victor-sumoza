@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+    .completo{
+         grid-template-columns: repeat(3, 1fr);
+    }
+   
+} 
+@media (min-width: 768px) {
+    .contenedor_producto{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+} 
+@media (min-width: 430){
+    .img footer{
+            width: 100%;
+}
+}
+@media (min-width: 768px) {
+    .nosotros{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 40rem;
+    }
+} 
