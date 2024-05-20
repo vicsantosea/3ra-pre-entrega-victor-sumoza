@@ -4,10 +4,9 @@ body {
 }
 
 header {
-  background-image: url(../FOTOS/embotelladora.jpg);
+  background: url(../FOTOS/embotelladora.jpg);
   height: 35rem;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
 }
 
@@ -23,21 +22,11 @@ footer {
   width: 100%;
 }
 
-h1 {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: italic;
-  font-variation-settings: "wdth" 90;
-  text-align: center;
-  color: #1e21cc;
-  padding: 6rem;
-}
-
 .sub_titulo {
   text-align: center;
   margin-top: 2rem;
   padding: 5rem;
+  color: blue;
 }
 
 /* Navegador */
@@ -46,7 +35,7 @@ h1 {
 }
 
 .nav-link {
-  color: rgb(251, 251, 251) !important;
+  color: rgb(1, 2, 2);
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -120,62 +109,6 @@ h1 {
 }
 
 /* FORMULARIO */
-.formulario {
-  background-color: #1414b3;
-  width: min(60rem, 100%);
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 2px 1px 21px 15px rgb(3, 75, 79);
-}
-
-.formulario fieldset {
-  border: none;
-}
-
-.formulario legend {
-  text-align: center;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: rgb(1, 2, 2);
-}
-
-.contenedor-formulario {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-}
-
-.campos {
-  margin-bottom: 1rem;
-}
-
-.campos label {
-  color: rgb(251, 251, 251) !important;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.input-tex {
-  width: 100%;
-  border: none;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.boton {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.bloque {
-  margin: 10rem;
-}
-
 /* FIN */
 @media (min-width: 768px) {
   .completo {
@@ -199,6 +132,14 @@ h1 {
     width: 40rem;
   }
 }
+@media (min-width: 768px) {
+  header, img footer {
+    background: url(../FOTOS/embotelladora.jpg);
+    height: 35rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
 .parrafo1 {
   font-weight: bold;
   font-size: 1.3rem;
@@ -211,7 +152,7 @@ h1 {
 }
 
 .parrafo-nosotros {
-  font-family: "Oswald", sans-serif;
+  font-family: "Pacifico", cursive;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
@@ -236,7 +177,7 @@ h1 {
   margin-top: 2rem;
   padding: 5rem;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .imagen_nosotros {

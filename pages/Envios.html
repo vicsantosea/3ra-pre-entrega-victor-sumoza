@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./Envios.html">
     <title>Agua VID</title>
 </head>
-<body>
+<body >
     <nav class="navbar navbar-expand-md  navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="../index.html">Agua VID <img src="../FOTOS/logo original.png" alt="logo" height="40"></a>
@@ -42,38 +42,61 @@
         </div>
       </nav>   
       <h1>Envios A Domicilio!!!</h1>
-      <section class="bloque">
-        <form class="formulario" >
-          <fieldset>
-            <legend>Completa Todos los campos para Envios</legend>
+     <div class="container-xl  ">
 
-            <div class="contenedor-formulario">
-                <div class="campos">
-                  <label>Nombre</label>
-                  <input class="input-tex" type="text" placeholder="Tu Nombre">
+        <form>
+                <div class="form-row col-lg-8 ">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Tu Nombre">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Tu Apellido">
+                  </div>
+                </div>
+                <div class="form-group col-lg-8">
+                  <label for="inputAddress">Correo</label>
+                  <input type="gmail" class="form-control"  placeholder="Correo">
+                </div>
+
+                <div class="form-group col-lg-8">
+                  <label for="inputAddress">Direccion</label>
+                  <input type="text" class="form-control"  placeholder="Tu Direccion">
                 </div>
                 
-                <div class="campos">
-                    <label>Telefono</label>
-                    <input class="input-tex" type="tel" placeholder="Tu Telefono">
+                <div class="form-row col-lg-12">
+                  <div class="form-group col-md-3">
+                    <label for="inputCity">Estado</label>
+                    <input type="text" class="form-control" placeholder="Estado">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputState">Ciudad</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Ciudad...</option>
+                      <option>Valencia</option>
+                      <option>San Diego </option>
+                      <option>Naguanagua</option>
+                      <option>Guacara</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Telefono</label>
+                    <input type="tel" class="form-control" id="inputZip">
+                  </div>
                 </div>
-
-                <div class="campos">
-                  <label>Correo</label>
-                  <input class="input-tex" type="gmail" placeholder="Tu Gmail">
+                <div class="form-group">
+                  
                 </div>
-
-                <div class="campos">
-                  <label>Direccion</label>
-                  <input class="input-tex" type="text" placeholder="Tu Direccion">
+                <div class="col-lg-12">
+                    
+                    <button type="button" class="btn btn-success col-md-2">ENVIAR</button>
                 </div>
-             </div>
-             
-            <button  type="button" class="btn btn-outline-success">ENVIAR</button>
+              
+              </form>
 
-          </fieldset>
-        </form>
-      </section>
+     </div>
+      
 
     <br>
       <footer>
