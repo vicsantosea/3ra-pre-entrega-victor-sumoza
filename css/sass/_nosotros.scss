@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     
-   
 }
 .nosotros_contenido{
     text-align: center;
@@ -18,18 +17,9 @@
     
     
 }
-.imagen_nosotros{
-    max-width: 50rem;
-    border-radius: 2rem;
-    -webkit-box-shadow: 2px 1px 21px 15px $color-azul-oscuro;
-    -moz-box-shadow: 2px 1px 21px 15px $color-azul-oscuro;
-    box-shadow: 2px 1px 21px 15px $color-azul-oscuro
-    
-}
+
 .imagen_nosotros:hover{
     box-shadow: 2px 1px 21px 15px  $color-azul-oscuro;
-   transform: translatey(-2%);
+    transform: translatey(-2%);
 }
-.foto-nosotros{
-    text-align: center;
-}
+

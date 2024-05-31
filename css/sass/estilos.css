@@ -1,10 +1,15 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: linear-gradient(#f9fafa, #4f63fc);
 }
 
 header {
-  background: url(../FOTOS/embotelladora.jpg);
+  background-image: linear-gradient(to right bottom, rgba(40, 37, 37, 0.7), rgba(40, 37, 37, 0.7)), url(../FOTOS/embotelladora.jpg);
   height: 35rem;
   background-repeat: no-repeat;
   background-position: center center;
@@ -180,17 +185,7 @@ footer {
   font-size: 1rem;
 }
 
-.imagen_nosotros {
-  max-width: 50rem;
-  border-radius: 2rem;
-  box-shadow: 2px 1px 21px 15px rgb(3, 75, 79);
-}
-
 .imagen_nosotros:hover {
   box-shadow: 2px 1px 21px 15px rgb(3, 75, 79);
   transform: translatey(-2%);
-}
-
-.foto-nosotros {
-  text-align: center;
 }/*# sourceMappingURL=estilos.css.map */

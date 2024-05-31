@@ -1,10 +1,11 @@
 @charset "UTF-8";
+
 body {
-  background: linear-gradient(#f9fafa, #4f63fc);
+  background: linear-gradient(to  bottom, rgb(248, 246, 248), rgba(129, 142, 239, 0.737));
 }
 
 header {
-  background-image: url(../FOTOS/embotelladora.jpg);
+  background-image: linear-gradient(to right bottom, rgba(9, 6, 6, 0.4),rgba(9,6,6,0.4)),url(../FOTOS/embotelladora.jpg);
   height: 35rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,23 +23,45 @@ footer {
 .img footer {
   width: 100%;
 }
+.img-flex{
+  max-width: 100%;
+  display: grid;
+  
+}
+
 
 h1 {
-  font-family: "Noto Serif", serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 800;
   font-style: italic;
-  font-variation-settings: "wdth" 90;
   text-align: center;
   color: #1e21cc;
   padding: 6rem;
+}
+
+.P-ubicacion{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .sub_titulo {
   text-align: center;
   margin-top: 2rem;
   padding: 5rem;
+  color: #1414b3;
+ 
 }
+.imagen-contacto{
+  max-width: 25rem;
+}
+@media (min-width: 768px) {
+  .imagen-contacto{
+    max-width: 30rem;
+  }
+} 
 
 /* Navegador */
 .navbar {
@@ -64,11 +87,17 @@ h1 {
 /* PPRODUCTOS */
 .contenedor_producto {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1fr);
   justify-content: center;
   gap: 10rem;
   padding: 6rem;
 }
+@media (min-width: 768px) {
+  .contenedor_producto{
+    grid-template-columns: repeat(3, 1fr);
+  }
+    
+} 
 
 .contenedor_producto, .sombra_producto:hover {
   transition: all 200ms ease;
@@ -81,24 +110,34 @@ h1 {
 
 /* carrusel  */
 .foto_carrusel {
-  height: 50%;
-  width: 50%;
+  height: 40%;
+  width: 70%;
+ 
 }
 
 .tamaño_carrusel {
   text-align: center;
   height: 100%;
   width: 100%;
-  padding: 4rem;
+  padding: 1.5rem;
 }
 
 /* mapa */
 .mapa {
-  display: flex;
-  -moz-columns: 1fr 1fr;
-       columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(1fr);
   padding: 4rem;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+    .mapa{
+      grid-template-columns: repeat(2, 1fr);
+      margin: 5rem;
+    }
+} 
+.datos{
+  text-align: center;
+  margin-top: 6rem;
 }
 
 .solo_mapa {
@@ -114,69 +153,11 @@ h1 {
 
 .completo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10rem;
+  grid-template-columns: repeat( 1fr);
+  gap: 3rem;
   text-align: center;
 }
 
-/* FORMULARIO */
-.formulario {
-  background-color: #1414b3;
-  width: min(60rem, 100%);
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 2px 1px 21px 15px rgb(3, 75, 79);
-}
-
-.formulario fieldset {
-  border: none;
-}
-
-.formulario legend {
-  text-align: center;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: rgb(1, 2, 2);
-}
-
-.contenedor-formulario {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-}
-
-.campos {
-  margin-bottom: 1rem;
-}
-
-.campos label {
-  color: rgb(251, 251, 251) !important;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.input-tex {
-  width: 100%;
-  border: none;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.boton {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.bloque {
-  margin: 10rem;
-}
-
-/* FIN */
 @media (min-width: 768px) {
   .completo {
     grid-template-columns: repeat(3, 1fr);
@@ -185,6 +166,11 @@ h1 {
 @media (min-width: 768px) {
   .contenedor_producto {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 320px) {
+  .contenedor_producto {
+    grid-template-rows: (1,2);
   }
 }
 @media (min-width: 430) {
@@ -199,6 +185,25 @@ h1 {
     width: 40rem;
   }
 }
+@media (min-width: 375px) {
+    .container-img{
+      width: 160%;
+      display: flex;
+      flex-direction: column;
+    
+}
+} 
+@media (min-width: 365px) {
+  .tamaño_carrusel {
+    
+    width: 0 auto;  }
+} 
+.container-img{
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
 .parrafo1 {
   font-weight: bold;
   font-size: 1.3rem;
@@ -208,7 +213,9 @@ h1 {
   font-weight: bold;
   font-size: 1rem;
   padding: 2rem;
+  
 }
+
 
 .parrafo-nosotros {
   font-family: "Oswald", sans-serif;
@@ -219,6 +226,7 @@ h1 {
   text-align: center;
   margin: 1.5rem;
   color: rgb(1, 2, 2);
+  
 }
 
 /* NOSOTROS */
@@ -240,16 +248,22 @@ h1 {
 }
 
 .imagen_nosotros {
-  max-width: 50rem;
+  max-width: 20rem;
   border-radius: 2rem;
   box-shadow: 2px 1px 21px 15px rgb(3, 75, 79);
 }
+@media (min-width:768px) {
+  .imagen_nosotros{
+    max-width: 50rem;
+  }
+} 
 
 .imagen_nosotros:hover {
   box-shadow: 2px 1px 21px 15px rgb(3, 75, 79);
   transform: translatey(-2%);
 }
-
-.foto-nosotros {
+.foto-nosotros{
   text-align: center;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
